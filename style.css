@@ -1,0 +1,475 @@
+*{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #545223;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #e6b800;
+  color: white;
+} 
+
+{
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+    background-image: url("https://cdn.pixabay.com/photo/2018/05/01/07/52/tuscany-3364921_640.jpg");
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.text1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    letter-spacing: 0.4ch;
+    font-family:'PT Serif', serif;
+    text-align: center;
+    color: rgb(165, 42, 42);
+
+    @media (max-width:800px) {
+        font-size: 10vw;
+    }
+}
+
+.text2 {
+    align-items: center;
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'PT Serif', serif;
+    font-weight: lighter;
+    color: rgb(220,20,60);
+
+    @media (max-width:800px) {
+        font-size: 5vw;
+    }
+}
+
+button {
+    display: block;
+    /* flex-wrap: wrap; */
+    /* max-width: 10vw; */
+    height: 50px;
+    padding: 10px;
+    font-family:'Josefin Slab', slab-serif;
+    font-weight: lighter;
+    font-size: 2vw;
+    transition-property: all;
+    transition-duration: 1s;
+    @media (max-width:768px) {
+        max-width:20vw;
+        font-size:6vw;
+        padding:0px;
+        margin:0px;
+    }
+}
+
+.button1 {
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 2vw;
+    background-color: transparent;
+    color: #8B0000;
+     align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center; 
+    border:3px solid #8B0000;
+    transition-property: all;
+    transition-duration: 1s;
+    @media (max-width:768px) {
+        font-size: 2.5vw;
+        max-width: 20vw;
+        padding:2px;
+    }
+    
+
+}
+button:hover
+{   
+    transform: scale(1.1,1.1);
+     background-color:#8B0000;
+     color:white;
+    /* font-size:1.25vw;    */
+}
+h3{
+    text-align: center;
+    margin-top:50px;
+    font-size: 4vw;
+    font-family: monospace;
+    align-self: center;
+    justify-content: center;
+    
+}
+.news
+{
+    background-color:rgb(225, 225, 217) ;
+    display:flex;
+    max-width:100vw;
+    row-gap: 45px ;
+    padding-bottom: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+.box{
+   
+    display: flex;
+    margin:5px;
+    max-width:100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @media (max-width:768px) {
+        flex-direction: column;
+        align-items:center;
+        
+        transform: translate(0.75,0.75);
+    }
+   
+}
+figure{
+    margin:1vw;
+    background-color: white;
+    border:2px solid rgb(224, 219, 219);
+    box-shadow: 3px 3px 3px 3px rgb(170, 177, 180);
+    transition: all;
+    transition-duration: 0.5s;
+    @media (max-width:768px) {
+        flex-direction: column;
+        align-items:center;
+        max-width:90%;
+    }
+   
+}
+figure:hover{
+    transform :scale(1.1,1.1);
+}
+img{
+    margin:20px 20px 20px 20px;
+    padding:0px;
+    max-width:100%;
+    height:250px;
+    @media (max-width:1500px) {
+        align-items: center;
+        width:80%;
+    }
+
+}
+h4{
+    margin-top:10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 2vw;
+    font-family: monospace;
+    align-self: center;
+    justify-content: center;
+    @media (max-width:768px) {
+        font-size: 3.5vw;
+    }
+}
+.boxcaption{
+    margin-top:1px;
+    margin-left:30px;
+    margin-bottom:30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #626161;
+    font-size: 1vw;
+    @media (max-width:768px) {
+        font-size: 2vw;
+    }
+}
+.button2{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border:2px solid rgb(165, 161, 161);
+    transition-property: all;
+    transition-duration:0.5s;
+    font-weight: lighter;
+    font-size: 1vw;
+    @media (max-width:768px) {
+        font-size: 2.5vw;
+        width: 40vw;
+        padding:5px;   
+        
+    }
+}
+.button2:hover{
+    background-color:rgb(110, 81, 81);
+    color:whitesmoke;
+}
+.ecotime{
+    background-image: url("https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?cs=srgb&dl=pexels-alena-koval-886521.jpg&fm=jpg");
+    background-size: cover;
+    max-width:100%;
+    height:800px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+}
+.ecotext1
+{
+    color:green;
+    text-align: right;
+    /* font-size: 150px; */
+    font-size:10vw;
+    margin-right: 40px;
+    font-family:'DM Serif Display',dm-serif;
+
+}
+.ecotext2
+{
+    color:green;
+    font-weight: bold;
+    font-size:8vw;
+    font-weight:lighter;
+    font-family:'DM Serif Display',dm-serif;
+}
+h2{
+    margin-right:70px;
+    font-family:'PT Serif',serif;
+    color:darkgrey;
+    
+}
+.ecotext3
+{
+    margin-right:50px;
+    font-family: 'PT Serif',serif;
+    color: darkgrey;
+    font-size:1.5vw;
+}
+
+.ecobutton
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    align-self:flex-end;
+    margin:30px 30px 0px 0px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border:2px solid green;
+    font-weight: lighter;
+    font-size:1em;
+}
+.ecobutton:hover{
+    background-color: green;
+    color:whitesmoke;
+}
+.subtext
+{
+    font-size:4vw;
+}
+.subscribe
+{
+    background-color: rgb(50, 50, 222);
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin :20px;
+    padding:25px;
+    border:none;
+    border-radius:20px;
+    /* display: flex; */
+}
+.subarea{
+    
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    }
+
+   
+input
+{
+    border:1px solid black;
+    border-radius: 10px;
+    padding :15px 25px 15px 25px;
+    margin-top: 40px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    @media (max-width:768px) {
+        max-width:2em;
+        display:flex;
+    
+}}
+input:hover{
+    transform:translateX(-20px);
+    border:5px solid orangered;
+}
+.subarea
+{
+    display:flex;
+    justify-content: center;
+}
+.button4{
+    justify-content: center;
+    align-items: center;
+    border:1px solid orange;
+    border-radius:10px;
+    margin-top:40px;
+    padding-top: 2px;
+    background-color: orangered;
+    color: white;
+    transform :translateX(-10px);
+    font-size: 1vw;
+    @media (max-width:768px) {
+        max-width:25vw;
+        /* display:flex; */
+        font-size: 4vw;
+        padding:4px;
+
+    }
+}
+.footer
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0px;
+    padding:25px;
+    background-color:blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    @media (max-width:1100px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        
+    }
+}
+.foot1,.foot2,.foot3,.foot4,.foot5
+{
+    max-width:20%; 
+    @media (max-width:768px) {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    } 
+}
+.adv
+{    @media (max-width:768px) {
+    font-size: 5vw;
+}}
+.footstyle
+{
+    margin-left:50px;
+    @media (max-width:768px) {
+        font-size: 5vw;
+        margin-left:0px;
+    }
+}
+.join
+{
+    border-radius:20px;
+    max-width:10vw;
+    display: block;
+    background-color: black;
+    color:white;
+    height:50px;
+    margin-top:25px;
+    margin-bottom: 50px;
+    font-size: 1vw;
+    @media (max-width:768px) {
+        max-width:20vw;
+        font-size: 4vw;
+    }
+}
+.handle
+{
+    width:50px;
+    height:50px;
+    padding :10px;
+}
+.fa-brands
+{
+    font-size:40px;
+}
+.foot2link
+{
+    margin:50px;
+    @media (max-width:768px) {
+        font-size: 5vw;
+        margin-left: 0px;
+    }
+   
+}
+a
+{
+    text-decoration: none;
+}
+.line{
+max-width: 96%;
+background-color: rgb(203, 203, 203);
+height: 2px;
+margin: auto;
+margin-top: 20px;
+}
+.lastfooter
+{
+    background-color: blanchedalmond;
+    height:10vh;
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;;
+        height:20vh;
+    }
+    
+   
+}
+.lastlink {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 20px;
+    @media (max-width:1000px) {
+        flex-direction: column;
+    }
+}
+.copy
+{   @media (max-width:768px) {
+    font-size: 5vw;
+}
+    
+}
+li{
+    margin-right:40px;
+}
